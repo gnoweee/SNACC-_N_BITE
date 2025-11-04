@@ -18,7 +18,7 @@ This is a simple **C++ console program** that simulates an ordering system for a
 ## How to Run
 
 1. Download or clone the repository.
-2. Open `main.cpp` in a C++ IDE or text editor.
+2. Open `SNACC_N_BITE.cpp` in a C++ IDE or text editor.
 3. Compile and run the program using your preferred compiler, e.g.:
 
 ```bash

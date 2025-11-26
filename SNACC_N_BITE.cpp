@@ -155,5 +155,26 @@ cout << "Tax (12%): ₱" << tax << endl;
     cout << right << setw(35) << "FINAL TOTAL: ₱" << finalTotal << endl;
     cout << "---------------------------------------------\n";
 
+// payment section
+    double payment = 0, change = 0;
+
+while (true) {
+    cout << "Enter amount paid: ₱";
+    cin >> payment;
+    if (cin.fail() || payment < finalTotal) {
+        cin.clear();
+        cin.ignore(1000, '\n');
+        cout << "Insufficient/Invalid payment. Please pay at least ₱" << finalTotal << ".\n";
+    } else {
+        change = payment - finalTotal;
+        break;   
+    }
+    
+}
+    cout << "Change: \t\t\t₱" << change << endl;
+    cout << "=============================================\n";
+    cout << "Thank you for ordering at SNACC 'N BITE!\n";
+    cout << "Have a great day! Enjoy your food!\n";
+
     return 0;
 }
